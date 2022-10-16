@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0268)https://mp4-a.udemycdn.com/2018-06-27_12-49-35-ad92057bdafda2c4cfe49e64bcd273be/original.html?vcDtbq7QYDuchfBrzkZ7Jr5_8ixrcqY9Kqb0Glkoi53T-%2DaStrO3j6iv3pg2lczlnr2WxSO06A4FFVZDIJsQP5n6DzM95nB8KMoFKVWjyqLCnctzCRaHZKnHO3MmNvcrJAo7dGKKzqqknX1YjdcU6VTly_0Dt3J3amStHNxNG98w -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Mes Commandes</title>
+        
+		
+		<link rel="stylesheet" href="./style.css">
+
+	</head>
+	
+
+	<body>
+
+		<!-- TITRE -->
+		<div id="top-banner">
+			Mes Commandes 
+		</div>
+		
+		<!-- MENU -->
+		<div id="MENU">
+			<ul>
+				<li><a href="MES_Comptes.html">  Mes Comptes </a></li>
+				<li><a href="MES_Commandes.html">Mes Commandes </a></li>
+				<li><a href="MES_Commandes.html">Mes Scripts </a></li>
+			
+			<ul>
+		</div>
+		
+		<!-- TITRE -->
+		<div id="top-banner">
+			- 
+		</div>
+		
+		<div>
+		<h1> Introduction </h1>
+			<P> Cette section présente les commandes QoS les plus utilisées pour la validations des tests QoS ITI IAD.</P>
+		</div>
+		
+		<div>
+		<h1> Table de Classification QoS </h1>
+			<P> - Afficher la table de classification QoS :
+			# cli ls Device_ProfileConfig[]_QosClassificationList </P> 
+			<P> - Afficher la liste de toute les règles QoS :
+			<P> # cli ls TrafficMgmt_Sys_QoS_Classification[]_Alias </P>
+			<P> # cli ls TrafficMgmt_Sys_QoS_Classification[]_Order </P>
+			<P> # cli ls TrafficMgmt_Sys_QoS_Classification[]_Enable </P>
+		</div>
+		
+				<div>
+		<h1> File de Priorisation NG+/NG+R1 </h1>
+			<P> # cat /proc/driver/xtm/txdmainfo |grep Ch </P> 
+		</div>
+		
+				<div>
+		<h1> File de Priorisation NG1/NG2 </h1>
+			<P> # cli ls TrafficMgmt_Sys_QoS_Queue </P> 
+		</div>
+		
+		<div>
+		<h1> MODE DEBUG VOIP </h1>
+			<P> # cli set Device_Syslog_Levels_19_Severity=7 </P>
+			<P> # cli set Services_TR069_Debug=5 </P>
+			<P> # cli set Services_Voice_LogLevels_PhoneApp=debug </P>
+			<P> # cli set Services_Voice_LogLevels_SofiaSip_Calls=debug </P>
+			<P> # cli set Services_Voice_LogLevels_SofiaSip_nta=debug </P>
+			<P> # cli set Services_Voice_SIPTrace=enabled </P>
+		</div>
+		
+		<div>
+		<h1> MODE DEBUG TR069 </h1>
+			<P> # cli set Device_Syslog_Levels_17_Severity=7</P>
+			<P> # cli set Device_Syslog_Levels_18_Severity=7 </P>
+			<P> # cli set Device_Syslog_Levels_19_Severity=7 </P>
+			<P> # cli set Device_Syslog_Levels_23_Severity=7 </P>
+			<P> # cli set Services_Voice_LogLevels_SofiaSip_nta=debug </P>
+			<P> # cli set Services_TR069_Debug=5 </P>
+		</div>
+		
+		<div>
+		<h1> Site En Cours de construction ... </h1>
+			
+		</div>
+	
+	
+</body></html>
